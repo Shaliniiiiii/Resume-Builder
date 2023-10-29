@@ -22,27 +22,13 @@ function Profile() {
         manageFile(URL.createObjectURL(e.target.files[0]));
         // setFile(URL.createObjectURL(e.target.files[0]));
     }
-    // const [profile,setProfile] = useState({
-    //     name: "Your Name",
-    //     location: "City, Name",
-    //     github: "",
-    //     linkedin: "",
-    //     website: "",
-    //     position: "Your Position",
-    //     tagline: "Describe yourself in one line"
-    // })
+
 
     const handleProfile = (e) => {
         manageProfile({
                     ...profile,
                     [e.target.name]:e.target.value
                 })
-        // setProfile((old)=>{
-        //     return {
-        //         ...old,
-        //         [e.target.name]:e.target.value
-        //     }
-        // })
     }
 
   const [show, setShow] = useState(false);
